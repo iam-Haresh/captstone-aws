@@ -17,6 +17,10 @@ module "vpc" {
   igw_tags = {
     Name = "my-igw"
   }
+
+    nat_gateway_tags = {
+    Name = "my-nat"
+  }
 }
 
 
