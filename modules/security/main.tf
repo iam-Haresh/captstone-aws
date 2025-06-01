@@ -32,10 +32,6 @@ resource "aws_security_group" "web_sg" {
   }
 }
 
-output "key_name" {
-  value = aws_key_pair.deployer_key.key_name
-}
-
 output "sg_id" {
   value = aws_security_group.web_sg.id
 }
