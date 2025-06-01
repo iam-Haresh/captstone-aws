@@ -13,7 +13,12 @@ module "vpc" {
   single_nat_gateway     = true
   enable_dns_support     = true
   enable_dns_hostnames   = true
+
+  igw_tags = {
+    Name = "my-igw"
+  }
 }
+
 
 output "vpc_id" {
   value = module.vpc.vpc_id
