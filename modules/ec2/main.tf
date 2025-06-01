@@ -4,7 +4,7 @@ resource "aws_instance" "app" {
   subnet_id                   = var.subnet_ids[0]
   key_name                    = var.key_name
   vpc_security_group_ids      = [var.sg_id]
-
+  associate_public_ip_address = true
   tags = {
     Name = "App-Machine"
   }
@@ -16,7 +16,7 @@ resource "aws_instance" "tools" {
   subnet_id                   = var.subnet_ids[1]
   key_name                    = var.key_name
   vpc_security_group_ids      = [var.sg_id]
-
+  associate_public_ip_address = true
   tags = {
     Name = "Tools-Machine"
   }
