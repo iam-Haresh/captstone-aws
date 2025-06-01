@@ -3,7 +3,7 @@ variable "aws_region" {
 }
 
 variable "key_name" {
-  default = "aws_auth"
+  default = "aws-auth"
 }
 
 variable "ami_id" {
