@@ -3,11 +3,7 @@ variable "aws_region" {
 }
 
 variable "key_name" {
-  default = "deployer-key"
-}
-
-variable "public_key_path" {
-  default = "~/.ssh/id_rsa.pub"
+  default = "aws_auth"
 }
 
 variable "ami_id" {

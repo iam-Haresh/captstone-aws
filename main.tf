@@ -24,7 +24,6 @@ module "security" {
   source   = "./modules/security"
   vpc_id   = module.vpc.vpc_id
   key_name = var.key_name
-  public_key_path = var.public_key_path
 }
 
 # EC2 module

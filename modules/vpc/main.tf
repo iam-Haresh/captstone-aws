@@ -13,7 +13,6 @@ module "vpc" {
   single_nat_gateway     = true
   enable_dns_support     = true
   enable_dns_hostnames   = true
-  enable_internet_gateway = true
 }
 
 output "vpc_id" {

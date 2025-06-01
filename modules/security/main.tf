@@ -1,6 +1,5 @@
-resource "aws_key_pair" "deployer_key" {
-  key_name   = var.key_name
-  public_key = file(var.public_key_path)
+output "key_name" {
+  value = var.key_name
 }
 
 resource "aws_security_group" "web_sg" {
